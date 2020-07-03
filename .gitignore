@@ -18,6 +18,6 @@
 
 ### ignored file ###
 
- .env
- .env.test
- .DS_Store
+*.env
+*.env.test
+*.DS_Store
