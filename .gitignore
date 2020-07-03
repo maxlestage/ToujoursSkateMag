@@ -22,3 +22,4 @@
 *.env.test
 *.DS_Store
 *.gitignore
+*products.html
