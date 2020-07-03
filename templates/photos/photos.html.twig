@@ -1,0 +1,166 @@
+{% extends 'base.html.twig' %}
+  {% block stylePerso %}
+      <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/masonry.css')}}">
+      <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/Gallery/owl.carousel.min.css')}}">
+      <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/Gallery/owl.theme.default.min.css')}}">
+      <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/Gallery/lightgallery.min.css')}}">
+      <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/Gallery/swiper.css')}}">
+      <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/Gallery/aos.css')}}">
+      <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/Gallery/style.css')}}">
+  {% endblock %}
+
+{% block body %}
+
+    <div class="container-fluid" data-aos="fade" data-aos-delay="500">
+        <div class="swiper-container images-carousel">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="image-wrap">
+                        <div class="image-info">
+                            <h2 class="mb-3">TEST</h2>
+                            <a href="{{ path('test') }}" class="btn btn-outline-white py-2 px-4">More Photos</a>
+                        </div>
+                        <img src="https://live.staticflickr.com/65535/48444875232_70a84832af_k.jpg" alt="Image">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-wrap">
+                        <div class="image-info">
+                            <h2 class="mb-3">Milky Way</h2>
+                            <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
+                        </div>
+                        <img src="https://live.staticflickr.com/65535/48406231441_61791dc610_k.jpg" alt="Image">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-wrap">
+                        <div class="image-info">
+                            <h2 class="mb-3">People</h2>
+                            <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
+                        </div>
+                        <img src="images/img_3.jpg" alt="Image">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-wrap">
+                        <div class="image-info">
+                            <h2 class="mb-3">Architecture</h2>
+                            <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
+                        </div>
+                        <img src="images/img_4.jpg" alt="Image">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-wrap">
+                        <div class="image-info">
+                            <h2 class="mb-3">Animals</h2>
+                            <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
+                        </div>
+                        <img src="images/img_5.jpg" alt="Image">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-wrap">
+                        <div class="image-info">
+                            <h2 class="mb-3">Sports</h2>
+                            <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
+                        </div>
+                        <img src="images/img_6.jpg" alt="Image">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-wrap">
+                        <div class="image-info">
+                            <h2 class="mb-3">Travel</h2>
+                            <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
+                        </div>
+                        <img src="images/img_7.jpg" alt="Image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </div>
+
+
+
+
+   {# <div class="row">
+        <div class="column">
+            <img src="https://photos.smugmug.com/OVERVIEW/A-BRIEF-GLANCE/i-KMhDzF8/0/49003c8d/L/3_CROSSES_NIGHTIME_POMAYROLS-L.jpg">
+            <img src="https://photos.smugmug.com/OVERVIEW/A-BRIEF-GLANCE/i-hbvmrjn/0/05d22896/L/2_HANDS_OUT_OF_WATER_ST_EULALIE_AVEYRON-L.jpg">
+            <img src="https://www.pixopolitan.com/blog/wp-content/uploads/2017/07/32264_large.jpg">
+            <img src="https://www.gregoire-photographe.fr/wp-content/uploads/2016/02/DSC_7456-1030x688.jpg">
+            <img src="https://i.pinimg.com/originals/ce/7b/56/ce7b56abbff6b2d3b1d374d9538783b2.jpg">
+            <img src="https://static.grainedephotographe.com/9-2077/Noir_et_blanc.jpg">
+            <img src="https://cdn.shopify.com/s/files/1/1722/4515/files/CarneyRoofI-did-web_1024x1024.jpg?v=1523730939">
+        </div>
+        <div class="column">
+            <img src="https://www.maxitendance.com/wp-content/uploads/2018/02/bw-child-photo-2017-enfants-photographies-noir-blanc-2.jpg">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSkdudJQvijwIIe--GH0eEdb-vLlDuWmZ-Fupjva4qx-UvESA1N&usqp=CAU">
+            <img src="https://i.pinimg.com/originals/84/a1/6e/84a16ee36851f9536852f2dbb19db099.jpg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/LA3_Roma_di_Augusto_De_Luca.jpg/220px-LA3_Roma_di_Augusto_De_Luca.jpg">
+            <img src="https://dyw7ncnq1en5l.cloudfront.net/optim/focus/articles/1571/photographie-noir-blanc-paysage-illustration17__w800.jpg">
+            <img src="https://i2.wp.com/www.laboiteverte.fr/wp-content/uploads/2013/05/noir-blanc-sous-eau-01.jpg?resize=600%2C400&ssl=1">
+            <img src="https://c.pxhere.com/photos/71/cd/alarm_clock_stand_up_time_of_sleep_bed_wake_up_time_indicating_ring_the_bell-655786.jpg!s">
+            <img src="https://www.pixopolitan.com/pub/media/catalog/product/cache/b0d62ec033cb271ce5ed3f22ecafbf65/4/2/x42688_sd.jpg.pagespeed.ic.K0TYPKxETh.jpg">
+            <img src="https://www.guillenphoto.com/data/blog/2020/023-chronique-pourquoi-comment-gerer-la-critique-I/images/paysage-canyon-de-chelly-photo-en-noir-et-blanc-amar-guillen-artiste-photographe.jpg">
+        </div>
+        <div class="column">
+            <img src="https://c.wallhere.com/photos/41/84/portrait_film_window_girl_fashion_35mm_blackwhite_women-507707.jpg!d">
+            <img src="https://www.guillenphoto.com/data/blog/2019/017-chronique-pourquoi-photographier-paysages-bw-II/images/photographier-les-paysages-en-noir-et-blanc-nil-bleu-cascade-amar-guillen-photographe.jpg">
+            <img src="https://dyw7ncnq1en5l.cloudfront.net/optim/focus/articles/1571/photographie-noir-blanc-paysage-illustration17__w800.jpg">
+            <img src="https://img.ev.mu/images/articles/600x/450271.jpg">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR23snqRqiI7Lchm7kfXT88q8BIS6XhRe4jUDXQ7TP2sl3_CsfA&usqp=CAU">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRWtF3vXjAyzR9EIS0UKKsXYLXfejuUV9saF8D5jy4AzWzRkwTi&usqp=CAU">
+            <img src="https://www.superprof.fr/blog/wp-content/uploads/2017/10/photo-noir-et-blanc-pro.jpg">
+            <img src="https://i.pinimg.com/736x/d1/55/a4/d155a432b8894ffecef5890aeacf02e9.jpg">
+        </div>
+        <div class="column">
+            <img src="https://i.pinimg.com/236x/ce/a0/04/cea0047e5827cdb6373e4270f9a101c6.jpg">
+            <img src="https://cdn.artphotolimited.com/images/58a5d554dfa573000fcff29a/700x700/plage-de-bordardoue-belle-ile-en-mer---photo-joseph-froc.jpg">
+            <img src="https://www.bnf.fr/sites/default/files/styles/expo_cartouche_petite/public/2020-03/fastenaekens_lehavre.png?h=ea61ee49&itok=S9NRUIf8">
+            <img src="data:image/jpeg;base64,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">
+            <img src="https://images.squarespace-cdn.com/content/v1/521df95de4b00cec7e5be43f/1379062709221-I6Y87CMBFTX76FDIV4OU/ke17ZwdGBToddI8pDm48kFjFWznSAWByFox5qCBYefEUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcAEPi_ObOJzHurSlMa2r04QG0PKbiiHSUf13h-e6CCoh2m0Z6E8EzVDls8wnkTFyI/photo-noir-et-blanc-019.jpg?format=750w">
+            <img src="data:image/jpeg;base64,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">
+        </div>
+    </div>#}
+{% endblock %}
+ {% block footer %}
+     <footer>
+         <p style="text-align: center; color: black">
+            <a>All rights reserved <i  aria-hidden="true"></i> by Max LESTAGE</a>  Copyright <script>document.write(new Date().getFullYear());</script>
+         </p>
+     </footer>
+ {% endblock %}
+
+
+
+ {% block javascriptsPerso %}
+     <script src="{{ asset('/assets/js/Gallery/jquery-3.3.1.min.js') }}"></script>
+     <script src="{{ asset('/assets/js/Gallery/jquery-migrate-3.0.1.min.js') }}"></script>
+     <script src="{{ asset('/assets/js/Gallery/jquery-ui.js') }}"></script>
+     <script src="{{ asset('/assets/js/Gallery/popper.min.js') }}"></script>
+     <script src="{{ asset('/assets/js/Gallery/owl.carousel.min.js') }}"></script>
+     <script src="{{ asset('/assets/js/Gallery/jquery.stellar.min.js') }}"></script>
+     <script src="{{ asset('/assets/js/Gallery/jquery.countdown.min.js') }}"></script>
+     <script src="{{ asset('/assets/js/Gallery/jquery.magnific-popup.min.js') }}"></script>
+     <script src="{{ asset('/assets/js/Gallery/bootstrap-datepicker.min.js') }}"></script>
+     <script src="{{ asset('/assets/js/Gallery/swiper.min.js') }}"></script>
+     <script src="{{ asset('/assets/js/Gallery/aos.js') }}"></script>
+     <script src="{{ asset('/assets/js/Gallery/picturefill.min.js') }}"></script>
+     <script src="{{ asset('/assets/js/Gallery/lightgallery-all.min.js') }}"></script>
+     <script src="{{ asset('/assets/js/Gallery/jquery.mousewheel.min.js') }}"></script>
+     <script src="{{ asset('/assets/js/Gallery/main.js') }}"></script>
+     <script type="text/javascript">
+         $(document).ready(function(){
+             $('#lightgallery').lightGallery();
+         });
+     </script>
+ {% endblock %}
+
+

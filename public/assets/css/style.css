@@ -1,0 +1,35 @@
+.jumbotron
+{
+    background:transparent;
+    padding-bottom: 45rem;
+    background-image:url(/images/toujours.PNG);
+    background-position:50% 50%;
+    background-size: 75%;
+    background-repeat:no-repeat;
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+.text-muted {
+    color: #6c757d !important;
+    padding-left: 15px;
+}
+
+.col-4.d-flex.justify-content-end.align-items-center {
+    padding-right: 35px;
+}
+
+form {
+    padding-top: 85px;
+}
+
+.nav-link:focus, .nav-link:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-link {
+    display: block;
+    padding: .5rem 1rem;
+    color: #212529;
+}

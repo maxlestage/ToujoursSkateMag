@@ -1,0 +1,92 @@
+{% extends 'base.html.twig' %}
+{% block stylePerso %}
+  <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/masonry.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/Gallery/owl.carousel.min.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/Gallery/owl.theme.default.min.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/Gallery/lightgallery.min.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/Gallery/swiper.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/Gallery/aos.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/Gallery/style.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/Gallery/modal.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/Gallery/testBackground.css')}}">
+{% endblock %}
+
+{% block body %}
+
+
+
+
+    <div class="row">
+
+
+
+        <div class="column">
+
+            <img src="https://live.staticflickr.com/65535/48444875232_70a84832af_k.jpg">
+            <img src="https://live.staticflickr.com/65535/48444886692_7615eb659e_k.jpg">
+            <img src="https://live.staticflickr.com/65535/48444736556_a85d73e2e6_k.jpg">
+            <img src="https://live.staticflickr.com/65535/48444900172_ab9a833019_k.jpg">
+            <img src="https://live.staticflickr.com/65535/48444752626_f1c885d484_k.jpg">
+            <img src="https://live.staticflickr.com/65535/48444793736_a6c8839bf3_k.jpg">
+            <img src="https://live.staticflickr.com/65535/48444955857_c26761969a_k.jpg">
+           <img src="https://live.staticflickr.com/65535/48444776571_ce8620f8b4_k.jpg">
+        </div>
+        <div class="column">
+            <img src="https://live.staticflickr.com/65535/48444766251_97db48b0c7_k.jpg">
+            <img src="https://live.staticflickr.com/65535/48444970487_021e130ef8_k.jpg">
+            <img src="https://live.staticflickr.com/65535/48444976952_c245e7a84a_k.jpg">
+            <img src="https://live.staticflickr.com/65535/48444983062_5838e4dea5_k.jpg">
+            <img src="https://live.staticflickr.com/65535/48444836071_e6df4757f4_k.jpg">
+            <img src="https://live.staticflickr.com/65535/48445002102_2b1f286cf5_k.jpg">
+            <img src="https://live.staticflickr.com/65535/48445009552_24a18967c1_k.jpg">
+        </div>
+        <div class="column">
+            <img src="https://live.staticflickr.com/65535/48444864641_31030bbc35_k.jpg">
+            <img src="https://live.staticflickr.com/65535/48445030637_1dbe1f8115_k.jpg">
+            <img src="https://live.staticflickr.com/65535/48444897241_0229d87e43_k.jpg">
+            <img src="https://live.staticflickr.com/65535/48445065812_ad2bcce6eb_k.jpg">
+            <img src="https://live.staticflickr.com/65535/48444919351_1ae2f85acf_k.jpg">
+            <img src="https://live.staticflickr.com/65535/48444928031_3bd221b693_k.jpg">
+            <img src="https://live.staticflickr.com/65535/48445091392_464f745e73_k.jpg">
+        </div>
+        <div class="column">
+            <img src="https://live.staticflickr.com/65535/48444942116_1ef0517da4_k.jpg">
+            <img src="https://live.staticflickr.com/65535/48444946936_03f2d9e456_k.jpg">
+            <img src="https://live.staticflickr.com/65535/48444950426_e2c653e9d8_k.jpg">
+            <img src="https://live.staticflickr.com/65535/48445108732_c8e10267bc_k.jpg">
+
+        </div>
+    </div>
+{% endblock %}
+ {% block javascriptsPerso %}
+
+     <script src="{{ asset('/assets/js/Gallery/jquery-3.3.1.min.js') }}"></script>
+     <script src="{{ asset('/assets/js/Gallery/jquery-migrate-3.0.1.min.js') }}"></script>
+     <script src="{{ asset('/assets/js/Gallery/jquery-ui.js') }}"></script>
+     <script src="{{ asset('/assets/js/Gallery/popper.min.js') }}"></script>
+     <script src="{{ asset('/assets/js/Gallery/owl.carousel.min.js') }}"></script>
+     <script src="{{ asset('/assets/js/Gallery/jquery.stellar.min.js') }}"></script>
+     <script src="{{ asset('/assets/js/Gallery/jquery.countdown.min.js') }}"></script>
+     <script src="{{ asset('/assets/js/Gallery/jquery.magnific-popup.min.js') }}"></script>
+     <script src="{{ asset('/assets/js/Gallery/bootstrap-datepicker.min.js') }}"></script>
+     <script src="{{ asset('/assets/js/Gallery/swiper.min.js') }}"></script>
+     <script src="{{ asset('/assets/js/Gallery/aos.js') }}"></script>
+     <script src="{{ asset('/assets/js/Gallery/picturefill.min.js') }}"></script>
+     <script src="{{ asset('/assets/js/Gallery/lightgallery-all.min.js') }}"></script>
+     <script src="{{ asset('/assets/js/Gallery/jquery.mousewheel.min.js') }}"></script>
+     <script src="{{ asset('/assets/js/Gallery/main.js') }}"></script>
+     <script src="{{ asset('/assets/js/Gallery/modal.js') }}"></script>
+     <script type="text/javascript">
+         $(document).ready(function(){
+             $('#lightgallery').lightGallery();
+         });
+     </script>
+ {% endblock %}
+
+{% block footer %}
+    <footer>
+        <p style="text-align: center; color: black">
+            <a>All rights reserved <i  aria-hidden="true"></i> by Max LESTAGE</a>  Copyright <script>document.write(new Date().getFullYear());</script>
+        </p>
+    </footer>
+{% endblock %}

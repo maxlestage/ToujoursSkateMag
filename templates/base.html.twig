@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Toujours Skateboarding Mag.{% endblock %}</title>
+        {% block stylesheets %}
+            <meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+            <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/style.css')}}">
+            <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/grainn.css')}}">
+        {% endblock %}
+        {% block stylePerso %}
+        {% endblock %}
+    {% block nav %}
+    </head>
+    <body>
+    {% if app.user %}
+    {% block navPerso %}
+        {% include 'user.html.twig' %}
+        {% endblock %}
+    {% else  %}
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('index') }}">Home</a>
+                    </li>
+                </ul>
+            </div>
+                <a class="navbar-brand mx-auto blog-header-logo text-dark">Toujours Skateboard Magazine.</a>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('app_register') }}">Créer un compte</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('login') }}">Se connecter</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        {% endif %}
+    {% endblock %}
+
+        {% block body %}
+        {% endblock %}
+        {% block footer %}
+
+        <footer>
+            <p style="text-align: center">
+                Copyright &copy;<script>document.write(new Date().getFullYear());</script> <a>All rights reserved <i  aria-hidden="true"></i> by Max LESTAGE</a>
+            </p>
+        </footer>
+
+        {% endblock %}
+        {% block javascripts %}{% endblock %}
+    {% block javascriptsPerso %}{% endblock %}
+    </body>
+</html>
